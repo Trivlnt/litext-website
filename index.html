@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litext</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(247, 244, 242);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            color:rgb(19, 18, 18);
+        }
+
+        .logo-h1{
+            margin-left: 15px;
+            font-size: 24px;
+        }
+
+        header{
+            display: flex;
+            background-color: rgb(45, 45, 45);
+            color: white;
+            height: 64px;
+            justify-content: center;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .nav-logo{
+            display: flex;
+        }
+        nav{
+            max-width: 1024px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        nav ul li a{
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+        .home-banner{
+            max-width: 1024px;
+            display: flex;
+            color: rgb(255, 255, 255);
+        }
+
+        .home-banner-img{
+            margin-left: 50px;
+        }
+
+        .home-banner-container{
+            background-color: rgb(92, 95, 85);
+            display: flex;
+            justify-content: center;
+            padding-bottom: 150px;
+            padding-top: 150px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .home-banner{
+                display: block;
+                text-align: center;
+            }
+
+            .home-banner-img{
+                margin-top: 50px;
+                max-width: 80%;
+                height: auto;
+            }
+        }
+
+        .home-banner h1{
+            font-size: 56px;
+        }
+
+        .home-banner p{
+            font-size: 24px;
+            opacity: .6;
+        }
+
+        .home-download-button{
+            font-size: 24px;
+            background-color: rgb(159, 167, 125);
+            padding: 15px 10px 15px 10px;
+            border-style: none;
+            margin-top: 20px;
+            color: rgb(71, 63, 63);
+        }
+
+        .home-keywords{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-center{
+            max-width: 1024px;
+            
+        }
+
+        .home-keywords h2{
+            padding-right: 100px;
+            font-size: 36px;
+        }
+
+        .home-keywords h1{
+            font-size: 48px;
+        }
+
+        .home-keywords div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-center-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-description-block{
+            margin-top: 300px;
+            margin-bottom: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="assets/img/Litext.png" height="32px" class="logo">
+                <h1 class="logo-h1">Litext Editor</h1>
+            </div>
+
+            <ul>
+                <li><a>About</a></li>
+                <li><a>Docs</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-banner-container">
+            <div class="home-banner">
+                <div>
+                    <h1>Litext Editor</h1>
+                    <p>A simple, yet effective code editor!</p>
+
+                    <button class="home-download-button">Download for Windows</button>
+                </div>
+    
+                <img src="https://user-images.githubusercontent.com/74553272/262099821-c39294e4-4475-4d04-bc05-f365d0323029.png" class="home-banner-img" height="420px">
+            </div>
+
+        </div>
+
+        <div class="main-center-container">
+            <div class="main-center">
+                <div class="home-keywords">
+
+                    <div>
+                        <h1>⚡</h1>
+                        <h2>Fast.</h2>
+                    </div>
+
+                    <div>
+                        <h1>💡</h1>
+                        <h2>Smart.</h2>
+                    </div>
+
+                    <div>
+                        <h1>📂</h1>
+                        <h2>Open.</h2>
+                    </div>
+
+                </div>
+
+                <div class="main-description-block">
+                    <h2>Syntax Highligthing</h2>
+                    <p>Litext provides syntax highlighting, which means that the code will be colorized based on the categories of the terms,
+                        providing a much faster way to read and identify things in your code.
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+        
+
+
+
+    </main>
+
+</body>
+</html>
